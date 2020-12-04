@@ -5,7 +5,7 @@ const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
   width: 800,
   height: 600,
-  backgroundColor: '#ffffff',
+  backgroundColor: '#10910e',
   parent: 'phaser-example',
   scene: new ExampleScene("123", { count: 0 })
 };

@@ -2,7 +2,7 @@
 
 A WIP Plugin for Hot Module Reloading in Phaser Scenes and Sprites in a Snowpack app.
 
-Note: This isn't built out to be a perfect generic system for all use-cases. Yet, maybe. Expect to have to get your hands dirty.
+Note: This isn't built out to be a perfect generic system for all use-cases. Yet, maybe. Expect to have to get your hands dirty because this hasn't hit a production system yet.
 
 ![./example-video.gif](./example-video.gif)
 

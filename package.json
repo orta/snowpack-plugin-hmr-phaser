@@ -1,0 +1,13 @@
+{
+  "name": "snowpack-plugin-hmr-phaser",
+  "version": "0.0.1",
+  "description": "Adds HMR to Phaser when in Snowpack",
+  "main": "index.js",
+  "author": "Orta Therox",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "node test",
+    "test:watch": "npx nodemon test.js"
+  }
+}

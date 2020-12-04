@@ -93,6 +93,15 @@ export let ExampleScene = class ExampleScene extends StateScene<State> {
 
 Each time you save inside that file, the scene will be removed at runtime and then re-created with the same `state` object and config.
 
+### TODO
+
+I need to write a game with this before it should be considered production ready, in that time I expect that I will:
+
+- Formalize what the design pattern for refreshable scenes look like
+- Add support for Sprites
+- Include a base class in this library for Scenes and Sprites
+- Look into whether all of this can be a Phaser plugin, so that you only need to include it in the game config
+
 ### Working on This
 
 The plugin is a single `index.js` file, with a corresponding `test.js`. Test your changes please.

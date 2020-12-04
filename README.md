@@ -87,7 +87,7 @@ export let ExampleScene = class ExampleScene extends StateScene<State> {
     const dy = this.state.draggable?.y || 20;
 
     // Just a shape which you can drag anywhere which 
-    // should retain its position across the 
+    // should retain its position across saves
     const draggable = this.add.sprite(dx, dy, 'orb');
     const shape = new Phaser.Geom.Circle(20, 20, 20);
     draggable.setInteractive(shape, Phaser.Geom.Circle.Contains);

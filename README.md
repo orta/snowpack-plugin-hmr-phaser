@@ -2,9 +2,22 @@
 
 A WIP Plugin for Hot Module Reloading in Phaser Scenes and Sprites in a Snowpack app.
 
-Note: This isn't built out to be a perfect generic system for all use-cases. Yet, maybe. 
+Note: This isn't built out to be a perfect generic system for all use-cases. Yet, maybe. Expect to have to get your hands dirty.
+
+![./example-video.gif](./example-video.gif)
 
 ## Setup
+
+Install the dependency `yarn add snowpack-plugin-hmr-phaser` then add it to your `snowpack.config.js`:
+
+```diff
+/** @type {import("snowpack").SnowpackUserConfig } */
+module.exports = {
+  // ...
+-  plugins: ['@snowpack/plugin-typescript'],
++  plugins: ['@snowpack/plugin-typescript', 'snowpack-plugin-hmr-phaser'],
+};
+```
 
 To use it, first make sure your game object is available as a global called `game`:
 
@@ -48,10 +61,16 @@ Then any scene you want HMR in looks like:
 import Phaser  from 'phaser';
 import { StateScene } from './StateScene';
 
+// You use a single object to store all current state, rather than
+// having all data stored on fields in the class:
+//
 interface State {
   draggable?: Phaser.GameObjects.Sprite;
 }
 
+// Yes, this is weird syntax, but it allows for a mutable copy of ExampleScene
+// which is what will be hot-swapped when you press save.
+//
 export let ExampleScene = class ExampleScene extends StateScene<State> {
   constructor(config: string | Phaser.Types.Scenes.SettingsConfig, state: State) {
     super(config, state)

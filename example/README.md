@@ -1,16 +1,12 @@
-# A WIP example of fast refresh inside a Phaser game
+# A demo app for testing the plugin
 
-![./video.gif](./video.gif)
 
 ```sh
 # Setup
-git clone https://github.com/orta/snowpack-phaser-fast-refresh
-cd snowpack-phaser-fast-refresh
-pnpm i
+yarn install
 
 # Start
-pnpm start
+yarn start
 ```
 
 Then look at [`src/Scene.ts`](./src/Scene.ts).
-

@@ -6,7 +6,16 @@ Note: This isn't built out to be a perfect generic system for all use-cases. Yet
 
 ![./example-video.gif](./example-video.gif)
 
-## Setup
+## Try it out
+
+```sh
+git clone https://github.com/orta/snowpack-plugin-hmr-phaser.git
+cd snowpack-plugin-hmr-phaser/example
+yarn install
+yarn start
+```
+
+## Setup for your Project
 
 Install the dependency `yarn add snowpack-plugin-hmr-phaser` then add it to your `snowpack.config.js`:
 

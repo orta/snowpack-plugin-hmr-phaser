@@ -1,3 +1,7 @@
+This was a proof of concept, which became https://github.com/orta/snowpack-plugin-hmr-phaser
+
+---
+
 ## Snowpack plugin for Phaser
 
 A WIP Plugin for Hot Module Reloading in Phaser Scenes and Sprites in a Snowpack app.

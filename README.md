@@ -1,6 +1,6 @@
 ## Snowpack plugin for Phaser
 
-A WIP Plugin for Hot Module Reloading in Phaser Scenes and Sprites in a Snowpack app.
+A usable but WIP Plugin for Hot Scene Reloading in Phaser Scenes in a Snowpack app.
 
 Note: This isn't built out to be a perfect generic system for all use-cases. Yet, maybe. Expect to have to get your hands dirty because this hasn't hit a production system yet.
 
